@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 240, 230);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.heart {
+    background-color: var(--c);
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    background-color: var(--c);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.heart::before  {
+    top: -15px;
+    left: 0px;
+}
+
+.heart::after  {
+    left: 15px;
+    top: 0;
+}
